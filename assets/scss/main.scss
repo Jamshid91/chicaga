@@ -1,0 +1,267 @@
+@import './color';
+@import './font';
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    overflow-x: hidden;
+}
+.container {
+    padding: 0 15px;
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    background-image: url(../img/png/first.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &-item {
+        width: 100%;
+        height: 65px;
+        border-radius: 16px;
+        background: linear-gradient(180deg, #76AAF8 0%, #4165E3 100%);
+        box-shadow: 0px 3px 0px #33478D;
+    }
+    .pen {
+        right: -10px;
+    }
+}
+.menu {
+    width: 100%;
+    left: -100%;
+    transition: .3s all;
+    &-item {
+        max-height: 25px;
+        overflow: hidden;
+        transition: .3s all;
+    }
+    .showMenuItem {
+        max-height: 500px;
+        .arrow {
+            transform: rotate(90deg);
+        }
+    }
+}
+.showMenu {
+    left: 0;
+}
+
+// End header and wrapper
+
+.lesson {
+    width: 100%;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 20.31%, rgba(255, 255, 255, 0) 72.92%, #FFFFFF 100%), linear-gradient(220.53deg, rgba(155, 247, 99, 0.15) 0%, rgba(38, 171, 91, 0.15) 76.95%), #FFFFFF;
+    border-radius: 10px;
+}
+// End lesson
+
+.english {
+ background-image: url(../img/png/eng_bg.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+}     
+// End english
+
+.gift {
+    &-title {
+        background: linear-gradient(220.53deg, rgba(155, 247, 99, 0.7) 0%, rgba(38, 171, 91, 0.7) 76.95%);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        box-shadow: 0px 0px 20px rgba(1, 199, 56, 0.4);
+        border-radius: 10px 10px 0px 0px;
+    }
+    &__btn {
+        background: linear-gradient(180deg, #76AAF8 0%, #4165E3 100%);
+        box-shadow: 0px 3px 0px #33478D;
+        border-radius: 16px;
+    }
+}
+// End gift
+
+.gift-carousel {
+    background: linear-gradient(220.53deg, rgba(155, 247, 99, 0.2) 0%, rgba(38, 171, 91, 0.2) 76.95%);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    height: auto; 
+    &-item {
+        height: 600px;
+    }
+    &-item_end {
+        height: auto;
+        .gift__email {
+            width: 100%;
+            height: 50px;
+            padding: 0 15px;
+            background: #F3F5F7;
+            box-shadow: inset 0px 2px 0px #B8C0C6;
+            border-radius: 10px;
+            font-size: 18px;
+            &::placeholder {
+                color: #A5A5A5;
+                font-size: 14px;
+            }
+        }
+        .gift__btn {
+            width: 100%;
+            height: 75px;
+            background: linear-gradient(180deg, #76AAF8 0%, #4165E3 100%);
+            box-shadow: 0px 3px 0px #33478D;
+            border-radius: 16px;
+        }
+        &-info {
+            width: 96%;
+            margin-left: auto;
+            background: #FFFFFF;
+            box-shadow: 10px 0px 15px 10px rgba(107, 107, 107, 0.1);
+            border-radius: 12px;
+            position: relative;
+            &::after {
+                content: '';
+                width: 20px;
+                height: 80%;
+                background: orange;
+                position: absolute;
+                left: -10px;
+                top: 10px;
+                z-index: -1;
+                border-radius: 12px;
+            }
+        }
+        .sub__btn {
+            width: 100%;
+            height: 70px;
+            border-radius: 16px;
+            background: linear-gradient(180deg, #76AAF8 0%, #4165E3 100%);
+            box-shadow: 0px 3px 0px #33478D;
+        }
+    }
+    button {
+        background: transparent;
+        outline: none;
+        &:focus {
+            outline: none;
+        }
+    }
+        .next {
+            width: 110px;
+            height: 50px;
+            border-radius: 16px;
+            background: linear-gradient(180deg, #76AAF8 0%, #4165E3 100%);
+            box-shadow: 0px 3px 0px #33478D;
+        }
+}
+// End gift-carousel
+
+.build-learning {
+    .vertical {
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+    }
+    .find-out {
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s all;
+    }
+    .showFindOut {
+        max-height: 2000px;
+    }
+    .find-out-title {
+        background-color: #fff;
+        box-shadow: 10px 0px 15px 10px rgba(107, 107, 107, 0.1);
+        border-radius: 16px;
+
+        &::before {
+            content: '';
+            width: 95%;
+            height: 25px;
+            border-radius: 12px;
+            position: absolute;
+            bottom: -10px;
+            left: 10px;
+            background: linear-gradient(220.53deg, rgba(155, 247, 99, 0.7) 0%, rgba(38, 171, 91, 0.7) 76.95%);
+            z-index: -1;
+        }
+    }
+    .find-out-title-info {
+        background: linear-gradient(180deg, #4D82F4 0%, #69A6FF 100%);
+        border-radius: 12px;
+        margin: 0 15px;
+        margin-top: -5px;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 30px;
+            height: 30px;
+            background-color: #4D82F4;
+            transform: rotate(45deg);
+            position: absolute;
+            left: 50px;
+            top: -13px;
+            border-radius: 5px;
+        }
+    }
+    .title-info__sub {
+        margin-top: -140px;
+        &::after {
+            left: 50%;
+        }
+    }
+    .scrollBar {
+        background: #FFFFFF;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 16px;
+        overflow: hidden;
+    } 
+    .scrollBar-title {
+        width: 100%;
+        overflow: scroll;
+        padding: 40px 0;
+        margin-left: 15px;
+    }
+    .scrollBar-title::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, #FF5353 0%, #FF7B7B 100%);
+        border-radius: 10px;
+    }
+    .scrollBar-title::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 10px;
+      }
+      .scrollBar-title::-webkit-scrollbar {
+        height: 6px;
+        width: 0;
+      }
+      .radio_button {
+        min-width: 136px;
+        height: 55px;
+        background-color: #fff;
+        margin-right: 15px; 
+        &:last-child {
+            margin-right: 20px;
+        }
+      }
+      .check_btn {
+          color: #4165E3;
+        box-shadow: 0px 5px 15px 5px rgba(107, 107, 107, 0.15);
+      }
+  
+      input[type='radio'] {
+        opacity: 0;
+      }
+      input:checked ~ .check_btn {
+        background-color: #4165E3;
+        color: #fff;
+        box-shadow: none;
+      }
+}
+// End build-learning
