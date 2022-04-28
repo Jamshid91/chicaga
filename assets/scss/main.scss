@@ -19,6 +19,49 @@ body {
     padding: 0 15px;
 }
 
+.slick-next,
+.slick-prev {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    background: linear-gradient(220.53deg, rgba(155, 247, 99, 0.7) 0%, rgba(38, 171, 91, 0.7) 76.95%);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    cursor: pointer;
+    z-index: 99;
+}
+.slick-prev {
+    left: 0px;
+}
+.slick-next {
+    right: 0px;
+}
+.slick-dots {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.slick-dots li button:before {
+    color: #C2C2C2;
+    opacity: 1;
+    font-size: 12px;
+    transition: .3s all;
+}
+.slick-dots li.slick-active button:before {
+    content: url('../img/png/dote.png');
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .wrapper {
     width: 100%;
     height: auto;
@@ -240,7 +283,7 @@ body {
       .scrollBar-title::-webkit-scrollbar {
         height: 6px;
         width: 0;
-      }
+      }    
       .radio_button {
         min-width: 136px;
         height: 55px;
@@ -265,3 +308,132 @@ body {
       }
 }
 // End build-learning
+
+.modul {
+    .modul-item {
+        background: linear-gradient(220.53deg, rgba(247, 247, 247, 0.3) 0%, rgba(164, 164, 164, 0.3) 76.95%), #FFFFFF;
+        box-shadow: inset -4px -4px 8px rgba(226, 226, 226, 0.3), inset 4px 4px 8px rgba(255, 255, 255, 0.75);
+    }
+    .modul-center {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(220.53deg, rgba(155, 247, 99, 0.7) 0%, rgba(38, 171, 91, 0.7) 76.95%), #FFFFFF;
+        box-shadow: 0px 0px 20px rgba(3, 63, 1, 0.15), inset -4px -4px 8px rgba(77, 130, 244, 0.3), inset 4px 4px 8px rgba(255, 255, 255, 0.75);
+        z-index: 10;
+    }
+}
+// modul
+    .animModal {
+        animation: animModal .2s linear;
+    }
+    @keyframes animModal {
+        from {
+            transform: scale(0);
+        }to {
+            transform: scale(1);
+        }
+    }
+
+.signUp {
+    background: linear-gradient(220.53deg, rgba(155, 247, 99, 0.3) 0%, rgba(38, 171, 91, 0.3) 76.95%), #FFFFFF;
+    border-radius: 16px;
+    input {
+        &::placeholder {
+            color: #C2C2C2;
+        }
+    }
+    select {
+        color: #C2C2C2;
+    }
+    button {
+        box-shadow: 0px 3px 0px #33478D;
+    }
+}
+// End signUp
+
+
+.confidence {
+    &-item {
+        padding: 20px 15px;
+        max-height: 120px;
+        overflow: hidden;
+        transition: .3s all;
+        border-radius: 16px;
+
+        .circle-red {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: linear-gradient(180deg, #FF5353 0%, #FF7B7B 100%);
+            margin-right: 10px;
+        }
+    }
+    &-list {
+        height: 74px;
+        background: #ECECEC;
+        border: 1px solid rgba(255, 255, 255, 0.75);
+        box-sizing: border-box;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 16px;
+        padding: 0 15px;
+        &__text {
+            color: #656565;;
+        }
+    }
+    .showConfidenceItem {
+        max-height: 1500px;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+        .confidence-list {
+            border: none;
+            background: linear-gradient(180deg, #4D82F4 0%, #69A6FF 100%);
+            .confidence-list__title {
+                color: #fff;
+            }
+            .confidence-list__text {
+                color: #E7E7E7 !important;
+            }
+        }
+        svg {
+            transform: rotate(90deg);
+            path {
+                fill: #fff;
+            }
+        }
+    }
+}
+// End confidence
+
+.lessons-carousel {
+    background: linear-gradient(179.93deg, #FFFFFF 0.06%, #DFFFD7 48.96%, #FFFFFF 99.94%);
+    &-sup {
+        &-item {
+            height: 242px;
+        }
+        .slick-prev {
+            left: -15px;
+        }
+        .slick-next {
+            right: -15px;
+        }
+    }
+    &-sub {
+        margin-top: 20px;
+        &-item {
+            height: 53px;
+        }
+        
+        .slick-slide {
+            margin: 0   5px;
+        }
+        .slick-dots {
+            bottom: -40px;
+        }
+    }
+}
+// End lessons-carousel
+.chicaga_ln {
+    background: linear-gradient(180deg, rgba(118, 170, 248, 0.15) 0%, rgba(65, 101, 227, 0.15) 100%);
+    box-shadow: 10px 0px 15px 10px rgba(107, 107, 107, 0.1);
+    border-radius: 0px 0px 16px 16px;
+}

@@ -67,3 +67,85 @@ $(document).ready(function() {
       $('.' + pageInfo).show();
     })
   });
+
+
+const baseMethods = document.querySelector('.base_methods'),
+      closeBaseMethods = document.querySelector('.close_base_methods'),
+      lesson_1 = document.querySelector('.lesson_1'),
+      modalLesson_1 = document.querySelector('.modal-lesson_1'),
+      closeLesson_1 = document.querySelector('.close-lesson_1'),
+      inGroups = document.querySelector('.in-groups'),
+      inGroupsBtn = document.querySelector('.in_groups'),
+      inGroupsClose = document.querySelector('.in_groups_close'),
+      freeze = document.querySelector('.freeze'),
+      freezeBtn = document.querySelector('.freeze__btn'),
+      freezeClose = document.querySelector('.freeze_close')
+
+
+baseMethods.addEventListener('click', () => {
+    baseMethods.nextElementSibling.classList.remove('hidden')
+});
+closeBaseMethods.addEventListener('click', () => {
+    closeBaseMethods.parentElement.classList.add('hidden')
+});
+
+lesson_1.addEventListener('click', () => {
+    modalLesson_1.classList.remove('hidden')
+});
+closeLesson_1.addEventListener('click', () => {
+    modalLesson_1.classList.add('hidden')
+});
+
+inGroupsBtn.addEventListener('click', () => {
+    inGroups.classList.remove('hidden')
+});
+inGroupsClose.addEventListener('click', () => {
+    inGroups.classList.add('hidden')
+});
+
+freezeBtn.addEventListener('click', () => {
+    freeze.classList.remove('hidden')
+});
+freezeClose.addEventListener('click', () => {
+    freeze.classList.add('hidden')
+});
+
+
+const confidenceItem = document.querySelectorAll('.confidence-item')
+
+
+confidenceItem.forEach(elem => {
+    elem.addEventListener('click', () => {
+        elem.classList.toggle('showConfidenceItem')
+    })
+});
+
+$('.lessons-carousel-sup').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: true,
+    focusOnSelect: true,
+    touchMove: false,
+    asNavFor: '.lessons-carousel-sub',
+    nextArrow: `<button class="slick-next">
+                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.293137 0.561936C-0.0973869 0.95246 -0.0973869 1.58563 0.293137 1.97615L5.58603 7.26904L0.293137 12.5619C-0.0973869 12.9525 -0.0973869 13.5856 0.293137 13.9761C0.683662 14.3667 1.31683 14.3667 1.70735 13.9761L7.70735 7.97615C8.09787 7.58563 8.09787 6.95246 7.70735 6.56194L1.70735 0.561936C1.31683 0.171412 0.683662 0.171412 0.293137 0.561936Z" fill="white"/>
+                    </svg>
+                </button>`,
+
+    prevArrow: `<button class="slick-prev">
+                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70686 0.561936C8.09739 0.95246 8.09739 1.58563 7.70686 1.97615L2.41397 7.26904L7.70686 12.5619C8.09739 12.9525 8.09739 13.5856 7.70686 13.9761C7.31634 14.3667 6.68317 14.3667 6.29265 13.9761L0.29265 7.97615C-0.0978737 7.58563 -0.0978737 6.95246 0.29265 6.56194L6.29265 0.561936C6.68317 0.171412 7.31634 0.171412 7.70686 0.561936Z" fill="white"/>
+                    </svg>
+                </button>`,
+});
+$('.lessons-carousel-sub').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    focusOnSelect: true,
+    touchMove: false,
+    asNavFor: '.lessons-carousel-sup',
+});
