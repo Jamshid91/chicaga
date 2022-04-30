@@ -313,16 +313,110 @@ body {
 
 .modul {
     .modul-item {
+        width: 30%;
         background: linear-gradient(220.53deg, rgba(247, 247, 247, 0.3) 0%, rgba(164, 164, 164, 0.3) 76.95%), #FFFFFF;
         box-shadow: inset -4px -4px 8px rgba(226, 226, 226, 0.3), inset 4px 4px 8px rgba(255, 255, 255, 0.75);
+        .title_text {
+            font-size: 16px;
+        }
+        .info_text {
+            font-size: 10px;
+        }
     }
-    .modul-center {
+    .modul_4 {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .modul_1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .modul_2 {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    .active {
+        width: 43%;
+        height: 130px;
+        position: absolute;
         top: 50%;      
         left: 50%;
         transform: translate(-50%, -50%);
         background: linear-gradient(220.53deg, rgba(155, 247, 99, 0.7) 0%, rgba(38, 171, 91, 0.7) 76.95%), #FFFFFF;
         box-shadow: 0px 0px 20px rgba(3, 63, 1, 0.15), inset -4px -4px 8px rgba(77, 130, 244, 0.3), inset 4px 4px 8px rgba(255, 255, 255, 0.75);
-        z-index: 10;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .title_text {
+            font-size: 24px;
+            text-align: center;
+            color: #fff;
+        }
+        .info_text {
+            font-size: 15px;
+            text-align: center;
+            color: #fff;
+        }
+    }
+    .modul-modal {
+        width: 225%;
+        top: 105%;
+        &__num {
+            background: linear-gradient(180deg, #76AAF8 0%, #4165E3 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        &-box {
+            width: 85%;
+            height: auto;
+            padding: 15px;
+            position: relative;
+            margin: 10px 0 30px auto;
+            span {
+                position: relative;
+                z-index: 2;
+                font-size: 14px;
+            }
+           &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(228, 255, 216, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-sizing: border-box;
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(8px);
+            border-radius: 12px;
+            z-index: 1;
+           }
+
+            &::after {
+                content: '';
+                width: 95%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 5px;
+                background: linear-gradient(220.53deg, rgba(155, 247, 99, 0.5) 0%, rgba(38, 171, 91, 0.5) 76.95%);
+                border-radius: 12px;
+                transform: rotate(-3deg);
+                z-index: 0;
+
+            }
+
+        }
+    }
+    .hideModal {
+        display: none !important;
     }
 }
 // modul

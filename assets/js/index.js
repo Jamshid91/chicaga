@@ -19,6 +19,34 @@ menuItem.addEventListener('click', () => {
 
 // End header
 
+let modulItems = document.querySelectorAll('.modul-item');
+let modulModalClose = document.querySelector('.modul-modal__close');
+
+
+modulItems.forEach(modul => {
+    modul.addEventListener('click', () => {
+        modulItems.forEach(btn => {
+            btn.classList.remove('active')
+            btn.children[1].classList.add('hidden')
+        })
+        modul.classList.add('active');
+        modulModalClose.classList.remove('hidden')
+        modul.children[1].classList.remove('hidden', 'hideModal')
+    })
+});
+
+    modulModalClose.addEventListener('click', () => {
+        modulItems.forEach(btn => {
+            btn.children[1].classList.add('hidden');
+            modulModalClose.classList.add('hidden')
+        })
+    })
+
+
+
+
+
+
 let giftCarouselSub = document.querySelector(".gift-carousel-sub");
 let buttons = document.querySelectorAll(".gift-carousel-button button");
 let [right, left] = buttons
