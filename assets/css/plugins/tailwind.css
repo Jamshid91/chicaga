@@ -27,6 +27,7 @@ table{border-collapse:collapse}
 .relative{position:relative}
 .sticky{position:-webkit-sticky;position:sticky}
 .shadow{filter:drop-shadow(0 4px 4px rgba(0, 0, 0, .25))}
+.shadow-bg{box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);}
 .opacity{opacity:.3}
 .top-0{top:0}
 .top-1{top:.25rem}
@@ -1558,6 +1559,7 @@ to{transform:rotate(360deg)}
 .bg-white_dark{background-color:#f9f9f9}
 .bg-black_light{background-color:#0009}
 .bg-green{background-color:#60ba1f}
+.bg-linear{background: linear-gradient(180.13deg, #FFFFFF 0.11%, #DFFFD7 48.96%, #FFFFFF 99.89%);}
 .bg-primary_ln{background:linear-gradient(180deg,#76aaf8 0,#4165e3 100%)}
 .bg-green_ln{background:linear-gradient(220.53deg,rgba(155,247,99,.7) 0,rgba(38,171,91,.7) 76.95%)}
 .bg-green_ln_light{background:linear-gradient(180.06deg,#dfffd7 -11.15%,#fff 99.95%)}
@@ -1940,7 +1942,7 @@ to{transform:rotate(360deg)}
 .text-primary_dark{color:#33478d}
 .text-gray_dark{color:#656565}
 .text-gray_text{color:#777}
-.text-gray_light{--tw-text-opacity:1;color:rgba(245,245,249,var(--tw-text-opacity))}
+.text-gray_light{color: #B7B7B7;}
 .text-black_light{color:#0009}
 .hover\:text-transparent:hover{color:transparent}
 .hover\:text-current:hover{color:currentColor}
