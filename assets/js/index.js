@@ -19,33 +19,6 @@ menuItem.addEventListener('click', () => {
 
 // End header
 
-let modulItems = document.querySelectorAll('.modul-item');
-let modulModalClose = document.querySelector('.modul-modal__close');
-
-
-modulItems.forEach(modul => {
-    modul.addEventListener('click', () => {
-        modulItems.forEach(btn => {
-            btn.classList.remove('active')
-            btn.children[1].classList.add('hidden')
-        })
-        modul.classList.add('active');
-        modulModalClose.classList.remove('hidden')
-        modul.children[1].classList.remove('hidden', 'hideModal')
-    })
-});
-
-    modulModalClose.addEventListener('click', () => {
-        modulItems.forEach(btn => {
-            btn.children[1].classList.add('hidden');
-            modulModalClose.classList.add('hidden')
-        })
-    })
-
-
-
-
-
 
 let giftCarouselSub = document.querySelector(".gift-carousel-sub");
 let buttons = document.querySelectorAll(".gift-carousel-button button");
@@ -96,6 +69,24 @@ $(document).ready(function() {
     })
   });
 
+//   modul carousel info
+  $(document).ready(function() {
+    $('.modul-modal').hide();
+    $('.modul__btn').click(function() {
+      let pageInfo = $(this).attr('data-radio');
+      $('.modul-modal').hide();
+      $('.' + pageInfo).show();
+    })
+  });
+
+
+  let modulModalClose = document.querySelectorAll('.modul-modal__close');
+
+    modulModalClose.forEach(btn => {
+        btn.addEventListener('click', () => {
+            btn.parentElement.style.display = 'none'
+        })
+    })
 //   Start FAQ 
 
 let faqItem = document.querySelectorAll('.faq-item');
@@ -123,7 +114,10 @@ const baseMethods = document.querySelector('.base_methods'),
       firstTimeClose = document.querySelector('.close_first_time'),
       buyCourse = document.querySelector('.buy_course'),
       buyCourseBtn = document.querySelector('.buy_course_btn'),
-      buyCourseClose = document.querySelector('.buy_course_close')
+      buyCourseClose = document.querySelector('.buy_course_close'),
+      rating = document.querySelector('.rating'),
+      ratingBtn = document.querySelector('.rating__btn'),
+      ratingClose = document.querySelector('.rating__close')
 
 
 baseMethods.addEventListener('click', () => {
@@ -168,6 +162,13 @@ buyCourseClose.addEventListener('click', () => {
     buyCourse.classList.add('hidden')
 });
 
+ratingBtn.addEventListener('click', () => {
+    rating.classList.remove('hidden')
+});
+ratingClose.addEventListener('click', () => {
+    rating.classList.add('hidden')
+});
+
 
 const confidenceItem = document.querySelectorAll('.confidence-item')
 
@@ -206,6 +207,17 @@ $('.lessons-carousel-sub').slick({
     focusOnSelect: true,
     touchMove: false,
     asNavFor: '.lessons-carousel-sup',
+});
+
+$('.modul-carousel').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    focusOnSelect: true,
+    touchMove: false,
+    centerMode: true,
+    centerPadding: '0px',
 });
 
 

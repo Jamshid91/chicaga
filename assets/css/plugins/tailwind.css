@@ -1945,6 +1945,7 @@ to{transform:rotate(360deg)}
 .text-gray_text{color:#777}
 .text-gray_light{color: #B7B7B7;}
 .text-black_light{color:#0009}
+.text-black__dark{color: #3C444C;}
 .hover\:text-transparent:hover{color:transparent}
 .hover\:text-current:hover{color:currentColor}
 .hover\:text-black:hover{--tw-text-opacity:1;color:rgba(0,0,0,var(--tw-text-opacity))}
