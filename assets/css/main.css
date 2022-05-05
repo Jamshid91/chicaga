@@ -774,6 +774,10 @@ body {
           border-radius: 16px;
 }
 
+.confidence-item .confidence-list__title {
+  color: #000;
+}
+
 .confidence-item .circle-red {
   width: 12px;
   height: 12px;

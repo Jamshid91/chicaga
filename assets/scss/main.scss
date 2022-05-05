@@ -474,6 +474,9 @@ body {
         overflow: hidden;
         transition: .3s all;
         border-radius: 16px;
+        .confidence-list__title {
+            color: #000;
+        }
 
         .circle-red {
             width: 12px;
