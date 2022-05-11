@@ -54,7 +54,7 @@ function moveRight() {
 }
 
 readMoreFindOut.addEventListener('click', () => {
-    findOut.classList.add('showFindOut');
+    findOut.classList.remove('hidden');
     readMoreFindOut.classList.add('hidden')
 });
 

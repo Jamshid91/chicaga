@@ -686,6 +686,7 @@ table{border-collapse:collapse}
 .mt-11{margin-top:2.75rem}
 .mt-12{margin-top:3rem}
 .mt-14{margin-top:3.5rem}
+.mt-15{margin-top:3.75rem}
 .mt-16{margin-top:4rem}
 .mt-20{margin-top:5rem}
 .mt-24{margin-top:6rem}
@@ -1910,6 +1911,7 @@ to{transform:rotate(360deg)}
 .text-lg{font-size:1.125rem;line-height:1.75rem}
 .text-xl{font-size:1.25rem;line-height:1.75rem}
 .text-2xl{font-size:1.5rem;line-height:2rem}
+.text-2\.5xl{font-size:26px;line-height: 39px}
 .text-3xl{font-size:1.875rem;line-height:2.25rem}
 .text-4xl{font-size:2.25rem;line-height:2.5rem}
 .text-5xl{font-size:3rem;line-height:1}
@@ -1942,6 +1944,7 @@ to{transform:rotate(360deg)}
 .text-primary{color:#5a93f9}
 .text-primary_dark{color:#33478d}
 .text-gray_dark{color:#656565}
+.text-dark{color: #3C444C;}
 .text-gray_text{color:#777}
 .text-gray_light{color: #B7B7B7;}
 .text-black_light{color:#0009}

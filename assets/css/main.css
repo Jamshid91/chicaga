@@ -263,10 +263,10 @@ button:focus {
 }
 
 .gift__btn {
-  background: -webkit-gradient(linear, left top, left bottom, from(#76AAF8), to(#4165E3));
-  background: -webkit-linear-gradient(top, #76AAF8 0%, #4165E3 100%);
-  background: -o-linear-gradient(top, #76AAF8 0%, #4165E3 100%);
-  background: linear-gradient(180deg, #76AAF8 0%, #4165E3 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#76AAF8), to(#3054d6));
+  background: -webkit-linear-gradient(top, #76AAF8 0%, #3054d6 100%);
+  background: -o-linear-gradient(top, #76AAF8 0%, #3054d6 100%);
+  background: linear-gradient(180deg, #76AAF8 0%, #3054d6 100%);
   -webkit-box-shadow: 0px 3px 0px #33478D;
           box-shadow: 0px 3px 0px #33478D;
   -webkit-border-radius: 16px;
@@ -289,7 +289,7 @@ button:focus {
 }
 
 .gift-carousel-item {
-  height: 600px;
+  height: 660px;
 }
 
 .gift-carousel-item_end {
@@ -409,18 +409,6 @@ button:focus {
           transform: rotate(180deg);
 }
 
-.build-learning .find-out {
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: .3s all;
-  -o-transition: .3s all;
-  transition: .3s all;
-}
-
-.build-learning .showFindOut {
-  max-height: 2000px;
-}
-
 .build-learning .find-out-title {
   background-color: #fff;
   -webkit-box-shadow: 10px 0px 15px 10px rgba(107, 107, 107, 0.1);
@@ -491,7 +479,7 @@ button:focus {
 .build-learning .scrollBar-title {
   width: 100%;
   overflow: scroll;
-  padding: 40px 0;
+  padding-bottom: 40px;
   margin-left: 15px;
 }
 
@@ -1098,7 +1086,7 @@ footer .footer-form__inp, footer .footer-form__select, footer .footer-form__text
           border-radius: 8px;
   font-size: 14px;
   padding: 0 15px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   outline: none;
 }
 
