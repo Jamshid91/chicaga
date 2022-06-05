@@ -36,14 +36,16 @@
                </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container relative">
             <div class="mt-1">
                 <a href="#" class="text-primary font-medium text-sm">Курсы</a> / 
                 <span class="font-medium text-sm">Для детей</span>
             </div>
             <div class="text-3xl font-bold my-2 relative">Курсы английского языка для детей
                 
-                <div class="animModal rating w-full bg-white rounded-2xl py-10 px-4 shadow absolute left-0 top-full text-left z-40 hidden">
+                
+            </div>
+            <div class="animModal rating w-full bg-white rounded-2xl py-10 px-4 shadow absolute left-0 top-0 text-left z-40 hidden">
                     <img loading="lazy" src="assets/img/png/Close.png" class="rating__close absolute top-4 right-4">
                     <div class="flex items-center">
                         <img src="assets/img/png/rating.png">
@@ -89,13 +91,52 @@
                         <p class="font-extralight text-sm ml-2 -mt-1">Лучший языковой лагерь городского типа 2019 </p>
                     </div>
                 </div>
-            </div>
             <p class="text-primary в школе № 1 в рейтингах СПб text-sm font-black underline rating__btn">в школе № 1 в рейтингах СПб</p>
             <div class="mt-56">
                 <p class="text-black__dark font-extrabold">Группы от 2 человек в 6 школах</p>
-                <div class="wrapper-item relative flex items-center justify-center mt-2 relative">
-                    <p class="text-white font-bold text-center">Записаться на 3 бесплатных <br> пробных занятия</p>
-                    <img loading="lazy" src="assets/img/png/pen.png" alt="pen" class="absolute pen">
+                <div class="relative">
+                    <div class="trial-lessons__btn wrapper-item flex items-center justify-center mt-2">
+                        <p class="text-white font-bold text-center">Записаться на 3 бесплатных <br> пробных занятия</p>
+                        <img loading="lazy" src="assets/img/png/pen.png" alt="pen" class="absolute pen">
+                    </div>
+        
+                    <div class="animModal w-full bg-green_ln_dark rounded-2xl py-6 px-4 shadow absolute left-0 top-0 text-left z-40 hidden">
+                        <img loading="lazy" src="assets/img/png/close-green.png" class="trial-lessons__close absolute top-3 right-2">
+                        <p class="text-sm font-bold">Напишите ваши контакты и выберите <br> ближайшую школу.</p>
+                        <p class="text-sm font-normal">Мы позвоним и запишем на консультацию.</p>
+                        
+                        <p class="text-sm font-bold mt-2">На консультации:</p>
+                        <div class="flex items-start mt-2">
+                            <div class="circle-red"></div>
+                            <p class="font-extralight text-sx">Определим актуальный уровень английского</p>
+                        </div>
+                        <div class="flex items-start mt-2">
+                            <div class="circle-red"></div>
+                            <p class="font-extralight text-sx">Подберем группу нужного уровня и удобное время для 1-го пробного урока <span class="font-bold">(можно пройти 3 бесплатных пробных занятия в группе)</span></p>
+                        </div>
+                        <form action="" class="mt-6">
+                            <input type="text" class="wrapper__inp" placeholder="Ваше имя" required>
+                            <input type="number" class="wrapper__inp" placeholder="Телефон" required>
+                            <select class="wrapper__select" required>
+                                <option value="0" selected disabled>Выберите школу</option>
+                                <option value="1">школa1</option>
+                                <option value="2">школa2</option>
+                            </select>
+                            <div class="flex justify-between">
+                                <button type="button" class="wrapper-form__btn btn1 active">Позвонить сейчас</button>
+                                <button type="button" class="wrapper-form__btn btn2">Позвонить по времени</button>
+                            </div>
+                            <div class="mt-2 hidden form-take-call">
+                                <p class="text-xs font-normal ml-2">Когда вам удобно принять звонок?</p>
+                                <input type="text" class="wrapper__inp" placeholder="Например, в понедельник  в 19:00">
+                                <p class="text-xs font-normal ml-2">Мы рады связаться с вами: <br>
+                                <span class="font-bold">пн – чт:</span> 12:00 – 22:00, <span class="font-bold">сб – вс:</span> 11:30 – 17:00</p>
+                            </div>
+                            
+                        <button class="wrapper__btn rounded-2xl w-full border-none outline-none text-white text-base font-bold mt-6 bg-primary_ln bg-shadow" type="submit">Записаться на 3 бесплатных <br> пробных занятия</button>
+                        <p class="wrapper-form__text font-extralight">Нажимая на кнопку «Записаться на 3 бесплатных пробных занятия», вы даете согласие на обработку своих персональных данных и соглашаетесь с Политикой конфиденциальности</p>
+                        </form>
+                    </div>
                 </div>
             </div>
             <div class="wrapper-info border-dotted border-gray_dark border-2 rounded-2xl py-4 px-3 mt-12">
@@ -262,8 +303,8 @@
     <div class="gift">
         <div class="gift-title text-white py-4 mb-4">
             <div class="container">
-                <p class="text-lg font-normal">Узнайте,</p>
-                <p class="text-2xl font-bold">какой формат обучения <br> подойдет вашему ребенку</p>
+                <p class="text-lg font-normal text-sh">Узнайте,</p>
+                <p class="text-2xl font-bold text-sh">какой формат обучения <br> подойдет вашему ребенку</p>
             </div>
         </div>
         <div class="container">
@@ -278,167 +319,249 @@
                 <p class="w-1/2 text-center text-sm font-normal"><span class="font-semibold">Сюрприз :) </span> <br> Ребенок будет <br> в восторге</p>
             </div>
             <button class="gift__btn text-white text-lg font-bold w-full py-2 mt-8">Подобрать идельный формат <br>и получить подарок</button>
-            <p class="text-sm font-light mt-3 mb-10">Вводить номер телефона в конце теста  не придется. Результат – сразу. Всё честно. </p>
+            <p class="text-sm font-light mt-3 mb-10">Вводить номер телефона в конце теста <br> не придется. Результат – сразу. Всё честно. </p>
         </div>
     </div>
     <!-- End gift -->
 
-    <div class="gift-carousel pt-8 pb-2">
+    <div class="gift-carousel">
         <div class="container relative h-full">
-            <div class="gift-carousel-item">
-                <div class="w-full h-2 rounded-2xl bg-gray_light relative">
+            <div class="gift-carousel-item item1">
+                <div class="w-full h-2.5 rounded-2xl bg-gray_light relative">
                     <span class="progress rounded-2xl h-full absolute left-0 top-0 w-1/5 bg-primary_ln"></span>
                 </div>
-                <p class="text-center text-xl font-medium my-8">Сколько лет ребенку?</p>
+                <p class="text-center text-1xl font-medium my-8">Сколько лет ребенку?</p>
                 <div class="flex justify-between px-10">
-                    <label for="rad1" class="flex flex-col items-center text-sm font-extrabold">
+                    <div class="item1-rad flex items-end justify-center">
                         <input type="radio" name="age" id="rad1" class="mb-4">
-                        5-6 лет
-                    </label>
-                    <label for="rad2" class="flex flex-col items-center text-sm font-extrabold">
+                        <label for="rad1" class="text-sm font-extrabold">5-6 лет</label>
+                    </div>
+                    <div class="item1-rad flex items-end justify-center">
                         <input type="radio" name="age" id="rad2" class="mb-4">
-                        6-8 лет
-                    </label>
-                    <label for="rad3" class="flex flex-col items-center text-sm font-extrabold">
+                        <label for="rad2" class="text-sm font-extrabold">6-8 лет</label>
+                    </div>
+                    <div class="item1-rad flex items-end justify-center">
                         <input type="radio" name="age" id="rad3" class="mb-4">
-                        8-12 лет
-                    </label>
+                        <label for="rad3" class="text-sm font-extrabold">8-12 лет</label>
+                    </div>
                 </div>
-                <div class="mt-15">
+                <div class="mt-15 relative">
                     <p class="text-sm font-light mb-2">Кстати ...</p>
                     <p class="text-lg font-extrabold">Малышам до 5 лет</p>
-                    <p class="text-sm font-semibold">дарим <a href="#" class="text-primary underline">красочную «развивашку».</a> И к ней – <br> методичку для родителей <span class="font-bold">Baby English: <br> first steps</span></p>
+                    <p class="text-sm font-semibold">дарим <span class="management-modal__btn text-primary underline">красочную «развивашку».</span> И к ней – <br> методичку для родителей <span class="font-bold">Baby English: <br> first steps</span></p>
+                    <div class="animModal management-modal w-full bg-white rounded-2xl py-8 px-4 shadow absolute left-0 top-0 text-left z-40 hidden">
+                        <img loading="lazy" src="assets/img/png/Close.png" class="management-modal__close absolute top-4 right-4">
+                        <p class="font-bold text-lg">Малышам – «развивашку». <br>
+                            Родителям – методичку <br>
+                            для занятий с ребенком дома</p>
+                        <div class="flex items-center justify-center mt-2 mb-6">
+                            <img src="assets/img/png/management1.png" class="mr-8">
+                            <img src="assets/img/png/management2.png">
+                        </div>
+                        <div class="flex items-center">
+                            <img src="assets/img/png/check.png" alt="">
+                            <p class="text-sx font-normal ml-1">В основе – <span class="font-bold">коммуникативная <br> методика</span> и наша разработка: </p>
+                        </div>
+                        <div class="flex items-end ml-10">
+                            <p class="text-sx font-normal mr-1">программа </p>
+                            <img src="assets/img/png/EmotioNessFon 2.png">
+                        </div>
+                        <div class="flex items-center mt-4">
+                            <img src="assets/img/png/check.png" alt="">
+                            <p class="text-sx font-normal ml-1">«Встроили» изучение алфавита, <br> первых слов и фраз в интересные <br> <span class="font-bold">игры, квесты и викторины</span></p>
+                        </div>
+                        <div class="flex items-center mt-4">
+                            <img src="assets/img/png/check.png" alt="">
+                            <p class="text-sx font-normal ml-1">10 минут в день – и вы весело <br> <span class="font-bold">и интересно для ребенка выучите <br> азы английского</span> языка</p>
+                        </div>
+                        <div class="wrapper-item flex items-center justify-center mt-8">
+                            <p class="management-modal-form-show text-white font-bold text-center">Подробнее о курсе <br> для подростков 13–17 лет</p>
+                        </div>
+                    </div>
+                    <div class="animModal management-modal-form w-full bg-white rounded-2xl py-8 px-4 shadow absolute left-0 top-0 text-left z-40 hidden">
+                        <img loading="lazy" src="assets/img/png/Close.png" class="management-modal-form__close absolute top-4 right-4">
+                        <p class="font-bold text-lg"><span class="font-normal">Заполните форму</span> – и мы <br> отправим «развивашку» и <br> методичку</p>
+                        <div class="flex items-center justify-center my-2">
+                            <img src="assets/img/png/management1.png">
+                            <img src="assets/img/png/plus.png" class="mx-6 w-6">
+                            <img src="assets/img/png/management2.png">
+                        </div>
+                        <div class="flex justify-center mb-11">
+                            <p class="font-semibold text-sm text-center mr-11">Красочная <br> «развивашка»</p>
+                            <p class="font-semibold text-sm text-center">Методичка <br> для родителей</p>
+                        </div>
+                        <form action="">
+                            <div class="flex flex-col">
+                                <label for="email" class="text-sm mb-2 ml-2 font-extralight">Введите e-mail</label>
+                                <input type="text" class="gift__email" id="email" placeholder="Hello@mail.com" required>
+                            </div>
+                            <button class="gift__btn relative text-lg font-bold text-white mt-4">Получить «развивашку» <br>
+                                и методичку
+                            </button>
+                            <p class="text-xs font-extralight mt-2">Нажимая на кнопку «Получить «развивашку» <br>
+                                и методичку», вы даете согласие на обработку <br> своих персональных данных и соглашаетесь  <br>
+                                с <a href="#" class="text-primary_text">Политикой конфиденциальности</a></p>
+                        </form>
+                    </div>
                 </div>
-                <div class="text-right mt-6">
+                <div class="text-right mt-6 relative">
                     <p class="text-lg font-extrabold">А подростков 13–17 лет</p>
-                    <p class="text-sm font-medium mt-1"><span class="text-primary">готовим</span> с упором на <br> успешную сдачу ОГЭ,  ЕГЭ</p>
+                    <p class="text-sm font-medium mt-1"><span class="teenagers-modal__btn text-primary">готовим</span> с упором на <br> успешную сдачу ОГЭ,  ЕГЭ</p>
+                    <div class="animModal teenagers-modal w-full bg-white rounded-2xl py-8 px-4 shadow absolute left-0 top-0 text-left z-40 hidden">
+                        <img loading="lazy" src="assets/img/png/Close.png" class="teenagers-modal__close absolute top-4 right-4">
+                        <div class="flex items-center font-bold text-lg">
+                            <img src="assets/img/png/teenagers.png" alt="">
+                            <p class="">Курс для подростков <br>
+                                13–17 лет Teen Friends </p>
+                        </div>
+                        <p class="text-sm font-normal mt-5">Объединяет 3 методики и программы: </p>
+                        <div class="flex items-center mt-6">
+                            <img src="assets/img/png/check_blue.png" alt="">
+                            <p class="text-base font-bold ml-1">Собственная методика <br> CHICAGA</p>
+                        </div>
+                        <p class="text-sx font-semibold mt-2">Строится на материалах ЕГЭ и ОГЭ. <br> Прицельно <span class="font-bold">подтягиваем знания, умения <br> и навыки,</span> которые помогут ребенку <br> успешно сдать экзамены.</p>
+                        <div class="flex items-center mt-6">
+                            <img src="assets/img/png/check_blue.png" alt="">
+                            <p class="text-base font-bold ml-1">Оксфордская коммуникативная <br> методика</p>
+                        </div>
+                        <p class="text-sx font-semibold mt-2">Помогает подросткам научиться <br> <span class="font-bold">свободно говорить и понимать саму <br> структуру языка.</span> А не бездумно зубрить <br> лексику и грамматику.</p>
+                        <div class="flex items-center mt-6">
+                            <img src="assets/img/png/check_blue.png" alt="">
+                            <p class="text-base font-bold ml-1">Разговорная практика</p>
+                        </div>
+                        <p class="text-sx font-semibold mt-2"><span class="font-bold">Тренирует беглый английский</span> учеников, <br> <span class="font-bold">улучшает понимание речи носителей</span> и <br> помогает отработать и закрепить на <br> практике полученные знания</p>
+                   
+                        <div class="wrapper-item flex items-center justify-center mt-6">
+                            <p class="text-white font-bold text-center">Подробнее о курсе <br> для подростков 13–17 лет</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <div class="gift-carousel-item hidden">
+            <div class="gift-carousel-item item2 hidden">
                 <div class="w-full h-2 rounded-2xl bg-gray_light relative">
                     <span class="progress rounded-2xl h-full absolute left-0 top-0 w-2/5 bg-primary_ln"></span>
                 </div>
                 <p class="text-xl font-medium text-center my-8">Какой сейчас у ребенка <br> <span class="font-bold">уровень английского?</span></p>
 
-                <label for="rad4" class="flex items-center text-sm font-normal mt-6">
-                    <input type="radio" name="test" id="rad4" class="mr-3">
-                    <span class="font-bold mr-1">Только начинает </span>  учить язык
-                </label>
-                <label for="rad5" class="flex items-center text-sm font-normal mt-6">
-                    <input type="radio" name="test" id="rad5" class="mr-3">Знает
-                    <span class="font-bold ml-1"> простые слова и фразы </span>
-                </label>
-                <label for="rad6" class="flex items-center text-sm font-normal mt-6">
-                    <input type="radio" name="test" id="rad6" class="mr-3">
-                    <span class="font-bold ml-1">Читает и немного говорит <br> <span class="font-normal">на простые темы</span> </span>
-                </label>
-                <label for="rad7" class="flex items-center text-sm font-normal mt-6">
-                    <input type="radio" name="test" id="rad7" class="mr-3">
-                    <span class="ml-1">Хорошо <span class="font-bold">понимает речь</span> собеседника <br>
-                        и свободно общается с иностранцами </span>
-                </label>
-                <label for="rad8" class="flex items-center text-sm font-normal mt-6">
-                    <input type="radio" name="test" id="rad8" class="mr-3">
-                    <span class="font-bold mr-1">Не знаю. </span> Хотим определить
-                </label>
+                
+                <div class="item2-rad">
+                    <input type="radio" name="age" id="rad4" class="mb-4">
+                    <label for="rad4" class="text-sm font-extrabold"><span class="font-bold ml-9">Только начинает </span>  учить язык</label>
+                </div>
+                <div class="item2-rad mt-8">
+                    <input type="radio" name="age" id="rad5" class="mb-4">
+                    <label for="rad5" class="text-sm font-extrabold"><span class="font-bold ml-9">Знает <span class="font-bold ml-1"> простые слова и фразы </span></label>
+                </div>
+                <div class="item2-rad mt-8">
+                    <input type="radio" name="age" id="rad6" class="mb-4">
+                    <label for="rad6" class="text-sm font-extrabold"><span class="ml-9">Читает и немного говорит</span> <br> <span class="ml-10 font-normal">на простые темы</span></label>
+                </div>
+                <div class="item2-rad mt-8">
+                    <input type="radio" name="age" id="rad7" class="mb-4">
+                    <label for="rad7" class="text-sm font-normal"><span class="ml-10">Хорошо <span class="font-bold">понимает речь</span> собеседника <br></span> <span class="ml-10">и свободно общается с иностранцами</span></label>
+                </div>
+                <div class="item2-rad mt-8">
+                    <input type="radio" name="age" id="rad7" class="mb-4">
+                    <label for="rad7" class="text-sm font-extrabold"><span class="ml-10"><span class="font-bold">Не знаю. </span> Хотим определить</span></label>
+                </div>
             </div>
                         
-            <div class="gift-carousel-item hidden">
+            <div class="gift-carousel-item item3 hidden">
                 <div class="w-full h-2 rounded-2xl bg-gray_light relative">
                     <span class="progress rounded-2xl h-full absolute left-0 top-0 w-3/5 bg-primary_ln"></span>
                 </div>
                 <p class="text-center text-xl font-medium mt-8 mb-6"><span class="font-bold">Для чего</span> хотите отдать <br>  ребенка на английский?</p>
                 <p class="text-sm font-light text-right">Можно выбрать несколько вариантов</p>
                 <div class="">
-                    <label for="check1" class="flex items-center text-sm font-medium mt-6">
-                        <input type="checkbox" name="Улучшить оценки" id="check1" class="mr-4">
-                            <span><span class="font-bold">Улучшить оценки</span> и подтянуться <br> по школьной программе</span>
-                    </label>
-                    <label for="check2" class="flex items-center text-sm font-medium mt-6">
-                        <input type="checkbox" name="читать и писать" id="check2" class="mr-4">
-                            <span>Научить<span class="font-bold">читать и писать <br> без ошибок</span></span>
-                    </label>
-                    <label for="check3" class="flex items-center text-sm font-medium mt-6">
-                        <input type="checkbox" name="Развязать язык" id="check3" class="mr-4">
-                            <span>«Развязать язык» и помочь ребенку <br><span class="font-bold">разговориться</span></span>
-                    </label>
-                    <label for="check4" class="flex items-center text-sm font-medium mt-6">
-                        <input type="checkbox" name="Воспринимать" id="check4" class="mr-4">
-                            <span>Воспринимать <span class="font-bold">речь собеседника <br> на слух и свободно общаться</span></span>
-                    </label>
+                    <div class="item3-rad mt-8">
+                        <input type="checkbox" name="age" id="check1" class="mb-4">
+                        <label for="check1" class="text-sm font-normal"><span class="font-bold ml-9">Улучшить оценки</span> и подтянуться <br> <span class="ml-10">по школьной программе</span></label>
+                    </div>
+                    <div class="item3-rad mt-6">
+                        <input type="checkbox" name="age" id="check2" class="mb-4">
+                        <label for="check2" class="text-sm font-normal"><span class="ml-9">Научить <span class="font-bold">читать и писать <br> <span class="ml-10">без ошибок</span></span></span></label>
+                    </div>
+                    <div class="item3-rad mt-6">
+                        <input type="checkbox" name="age" id="check3" class="mb-4">
+                        <label for="check3" class="text-sm font-normal"><span class="ml-9">«Развязать язык» и помочь ребенку <br> <span class="font-bold ml-10">разговориться</span></span></label>
+                    </div>
+                    <div class="item3-rad mt-6">
+                        <input type="checkbox" name="age" id="check4" class="mb-4">
+                        <label for="check4" class="text-sm font-normal"><span class="ml-9">Воспринимать <span class="font-bold">речь собеседника <br> <span class="ml-10">на слух и свободно общаться</span></span></span></label>
+                    </div>
                 </div>
             </div>
                        
-            <div class="gift-carousel-item hidden">
+            <div class="gift-carousel-item item4 hidden">
                 <div class="w-full h-2 rounded-2xl bg-gray_light relative">
                     <span class="progress rounded-2xl h-full absolute left-0 top-0 w-4/5 bg-primary_ln"></span>
                 </div>
                 <p class="text-center text-xl font-medium mt-8 mb-6"><span class="font-bold">Как быстро</span> надо <br> подтянуть язык?</p>
 
                 <div class="">
-                    <label for="rad9" class="flex items-center text-sm font-normal mt-6">
-                        <input type="radio" name="test" id="rad9" class="mr-3">
-                        <span class="font-bold mr-1">Чем быстрее, </span>тем лучше
-                    </label>
-                    <label for="rad10" class="flex items-center text-sm font-normal mt-6">
-                        <input type="radio" name="test" id="rad10" class="mr-3">
-                        В комфортном<span class="font-bold ml-1">размеренном режиме</span>
-                    </label>
-                    <label for="rad11" class="flex items-center text-sm font-normal mt-6">
-                        <input type="radio" name="test" id="rad11" class="mr-3">
-                        <span>У нас много кружков. Главное – <br> <span class="font-bold ml-1">вписать английский без перегрузки</span></span>
-                    </label>
-                    <label for="rad12" class="flex items-center text-sm font-normal mt-6">
-                        <input type="radio" name="test" id="rad12" class="mr-3">
-                        Еще подумаем
-                    </label>
-
+                    
+                <div class="item4-rad mt-8">
+                    <input type="radio" name="age" id="rad9" class="mb-4">
+                    <label for="rad9" class="text-sm font-normal"><span class="font-bold ml-9">Чем быстрее, </span>тем лучше</label>
+                </div>    
+                <div class="item4-rad mt-8">
+                    <input type="radio" name="age" id="rad10" class="mb-4">
+                    <label for="rad10" class="text-sm font-normal"><span class="ml-9">В комфортном <span class="font-bold">размеренном <br> <span class="ml-10">режиме</span></span> </span></label>
+                </div> 
+                <div class="item4-rad mt-8">
+                    <input type="radio" name="age" id="rad11" class="mb-4">
+                    <label for="rad11" class="text-sm font-normal"><span class="ml-9">У нас много кружков. Главное – <br> <span class="font-bold ml-10">вписать английский без перегрузки</span></span></label>
+                </div>
+                <div class="item4-rad mt-8">
+                    <input type="radio" name="age" id="rad12" class="mb-4">
+                    <label for="rad12" class="text-sm font-normal"><span class="ml-9">Еще подумаем</span></label>
+                </div>
                 </div>
             </div>
          
-            <div class="gift-carousel-item hidden">
+            <div class="gift-carousel-item item5 hidden">
                 <div class="w-full h-2 rounded-2xl bg-gray_light relative">
                     <span class="progress rounded-2xl h-full absolute left-0 top-0 w-full bg-primary_ln"></span>
                 </div>
-                <p class="text-center text-xl font-medium mt-8 mb-6"><span class="font-bold">В каком формате</span> удобнее заниматься?</p>
+                <p class="text-center text-xl font-medium my-8"><span class="font-bold">В каком формате</span> удобнее заниматься?</p>
                 <div class="flex items-start">
                     <div class="mr-14">
-                        <label for="rad13" class="flex items-center text-sm font-normal mt-6">
-                            <input type="radio" name="test" id="rad13" class="mr-3">
-                            <span class="font-bold">Очно</span> в школе
-                        </label>
-                        <label for="rad14" class="flex items-center text-sm font-normal mt-6">
-                            <input type="radio" name="test" id="rad14" class="mr-3">
-                            Не знаю
-                        </label>
+                        <div class="item5-rad">
+                            <input type="radio" name="age" id="rad13" class="mb-4">
+                            <label for="rad13" class="text-sm font-normal"><span class="ml-9"><span class="font-bold">Очно </span> в школе</span></label>
+                        </div>
+                        <div class="item5-rad mt-6">
+                            <input type="radio" name="age" id="rad14" class="mb-4">
+                            <label for="rad14" class="text-sm font-normal"><span class="ml-9">Не знаю</span></label>
+                        </div>
                     </div>
-                    <label for="rad15" class="flex items-center text-sm font-normal mt-6">
-                        <input type="radio" name="test" id="rad15" class="mr-3">
-                        <span class="font-bold">Онлайн</span>
-                    </label>   
+                    <div class="item5-rad mt-6">
+                        <input type="radio" name="age" id="rad15" class="mb-4">
+                        <label for="rad15" class="text-sm font-normal"><span class="ml-9">Онлайн</span></label>
+                    </div>   
                 </div>
-                <p class="text-center text-xl font-medium mt-8 mb-6">Рассматриваете обучение <br> <span class="font-bold">в группе или индивидуально <br> с преподавателем?</span></p>
+                <p class="text-center text-xl font-medium my-8">Рассматриваете обучение <br> <span class="font-bold">в группе или индивидуально <br> с преподавателем?</span></p>
                 <div class="flex items-start">
                     <div class="mr-14">
-                        <label for="rad16" class="flex items-center text-sm font-normal mt-6">
-                            <input type="radio" name="test" id="rad16" class="mr-3">
-                            <span class="font-bold">В группе</span>
-                        </label>
-                        <label for="rad14" class="flex items-center text-sm font-normal mt-6">
-                            <input type="radio" name="test" id="rad14" class="mr-3">
-                            <span><span class="font-bold">Совместить</span> <br>  оба формата</span>
-                        </label>
+                        <div class="item5-rad">
+                            <input type="radio" name="age" id="rad16" class="mb-4">
+                            <label for="rad16" class="text-sm font-bold"><span class="ml-9">В группе</span></label>
+                        </div>
+                        <div class="item5-rad mt-6">
+                            <input type="radio" name="age" id="rad17" class="mb-4">
+                            <label for="rad17" class="text-sm font-normal"><span class="ml-9"><span class="font-bold">Совместить</span> <br>  <span class="ml-10">оба формата</span></span></label>
+                        </div>
                     </div>
                    <div class="">
-                    <label for="rad15" class="flex items-center text-sm font-normal mt-6">
-                        <input type="radio" name="test" id="rad15" class="mr-3">
-                        <span class="font-bold">Индивидуально</span>
-                    </label>   
-                    <label for="rad15" class="flex items-center text-sm font-normal mt-6">
-                        <input type="radio" name="test" id="rad15" class="mr-3">
-                        Пока не знаю
-                    </label>   
+                    <div class="item5-rad">
+                        <input type="radio" name="age" id="rad18" class="mb-4">
+                        <label for="rad18" class="text-sm font-bold"><span class="ml-9">Индивидуально</span></label>
+                    </div>
+                    <div class="item5-rad mt-6">
+                        <input type="radio" name="age" id="rad19" class="mb-4">
+                        <label for="rad19" class="text-sm font-normal"><span class="ml-9">Пока не знаю</span></label>
+                    </div> 
                    </div>
                 </div>
             </div>
@@ -477,7 +600,7 @@
                 </div>
                 <form action="#" class="my-6">
                     <div class="flex flex-col">
-                        <label for="email" class="text-sm">Введите e-mail</label>
+                        <label for="email" class="text-sm mb-1 ml-4">Введите e-mail</label>
                         <input type="text" class="gift__email" id="email" placeholder="Hello@mail.com" required>
                     </div>
                     <button class="gift__btn relative text-lg font-bold text-white mt-6">Получите PDF с 10 играми <br> и сюрпризом для ребенка
@@ -486,17 +609,17 @@
                 </form>
                 <p class="text-sm font-medium">Тест тестом, но...</p>
                 <div class="gift-carousel-item_end-info p-4 text-sm font-medium mt-3">
-                    только <span class="font-bold">после консультации</span> и тес <span class="font-bold">тирования в школе</span> мы сможем определить уровень знаний ребенка
+                    только <span class="font-bold">после консультации</span> <br> и тестирования <span class="font-bold"> в школе</span> мы сможем <br> определить уровень знаний ребенка
                 </div>
                 <p class="text-sm font-normal mt-10">Плюс —  предложим <span class="font-bold">3 бесплатных пробных занятия в удобный день и время</span> </p>
                 <button class="sub__btn text-white text-base font-bold mt-4">Запишитесь на консультацию <br>
                     и 3 бесплатных пробных занятия</button>
             </div>
 
-            <div class="gift-carousel-sub absolute left-0 bottom-1 flex items-center justify-between w-full px-5">
+            <div class="gift-carousel-sub absolute left-0 bottom-0 flex items-center justify-between w-full px-5">
                 <div class="relative">
                     <img loading="lazy" src="assets/img/png/gift3.png">
-                    <p class="text-sm font-bold absolute left-0 bottom-3">Ваши подарки</p>
+                    <p class="text-sm font-bold absolute left-0 bottom-1.5">Ваши подарки</p>
                 </div>
                 <div class="gift-carousel-button flex items-center">
                     <button class="prev mr-5 hidden">
@@ -505,7 +628,7 @@
                         </svg>
                     </button>
                     <button class="next font-bold text-lg text-white flex items-center justify-center">Далее
-                        <svg class="ml-2" width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="ml-3" width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6286 14.3903L2.19404 25.629C1.69225 26.1211 0.879479 26.1211 0.376369 25.629C-0.125422 25.1369 -0.125422 24.3378 0.376369 23.8457L10.9037 13.4987L0.377689 3.15165C-0.124102 2.65959 -0.124102 1.86046 0.377689 1.3671C0.879479 0.87503 1.69357 0.87503 2.19536 1.3671L13.6299 12.6058C14.1238 13.0926 14.1238 13.9044 13.6286 14.3903Z" fill="white"/>
                         </svg></button>
                 </div>
@@ -521,13 +644,13 @@
             <p class="text-primary_dark font-extrabold mt-2 text-3xl">3 фундаментальных</p>
             <p class="text-2xl font-bold mb-8">методиках и программах:</p>
         </div>
-            <div class="bg-green_ln p-4 flex items-center">
+            <div class="bg-green_ln p-4 flex items-center text-sh">
                 <span class="vertical text-white font-bold text-7xl">01</span>
                 <p class="text-white text-lg font-bold ml-1"><span class="text-xl font-extrabold">Коммуникативная <br> методика</span> помогает заговорить по-английски <br> и понять структуру языка</p>
             </div>
 
-            <div class="container">
-                <div class="mt-4 flex text-sm">
+            <div class="">
+                <div class="container mt-4 flex text-sm">
                     <div class="relative inline-block text-center">
                         <img loading="lazy" src="assets/img/png/teacher.png" class="w-32 h-32 rounded-full object-cover">
                         <img loading="lazy" src="assets/img/png/,, 1.png" class="absolute top-0 -right-2">
@@ -536,11 +659,11 @@
                     </div>
                     <div class="ml-4 text-sm">
                         <p class="font-bold">Let's talk! English only :-)</p>
-                        <p class="font-normal mt-5">Да-да, сразу говорим с детьми по-английски.</p>
+                        <p class="font-normal mt-4">Да-да, сразу говорим с детьми по-английски.</p>
                         <p class="text-primary underline">Даже если они только <br> начали учить язык</p>
                     </div>
                 </div>
-                <div class="relative mt-8">
+                <div class="container relative mt-8">
                     <div class="text-base font-extrabold relative inline-block">С первого урока приучаем <br>
                         не бояться говорить <br>
                         и не избегать живого общения
@@ -550,40 +673,46 @@
                         но ребенок уже учится свободно <br>
                         выражать свои мысли на английском</p>
                 </div>
-                <p class="text-right mt-8 text-sm text-primary readMore-findOut">Узнайте, почему/как...</p>
+                <div class="relative">
+                    <div class="container">
+                        <p class="text-right mt-8 text-sm text-primary readMore-findOut">Узнайте, почему/как...</p>
+                    </div>
+                <div class="find-out animModal absolute top-0 left-0 z-40 bg-white hidden">
+                    <div class="find-out-title py-6 relative mt-4">
+                        <div class="container relative">
+                            <img loading="lazy" src="assets/img/png/Close.png" class="find-out__close absolute -top-3 right-1">
+                            <p class="text-sm font-medium text-black">Учитель мягко поправит и обыграет ошибку <br> так, чтобы <span class="font-extrabold">ученик запомнил правило <br> и не воспринял исправление <br>  как критику</span></p>
+                        </div>
+                    </div>
+                    <img loading="lazy" src="assets/img/png/teacher1.png" class="w-full object-cover -mt-14">
+                    <div class="find-out-title-info p-4 text-white text-sm">
+                        Поэтому ребенок легко <span class="font-bold">преодолевает языковой барьер</span>, больше не стремится отмолчаться и может без стресса о чем-то <span class="font-bold">спросить и ответить по-английски</span>
+                    </div>
+                    <div class="container relative mt-8">
+                        <img loading="lazy" src="assets/img/png/слова.png" class="absolute right-5 top-5">
+                        <p class="font-medium">Грамматические конструкции <br> и фразы «вдруг» сами начинают <br> вплетаться в речь детей</p>
+                        <p class="font-medium text-sm mt-8">На каждом уроке изучаем актуальную <br>
+                            для детей тему и разбираем фразы по ней. <br>
+                            Говорим о том, что интересно ученикам. <br>
+                            И они <span class="font-bold">на лету запоминают новые <br> выражения.</span></p>
+                    </div>
+                    <div class="find-out-title py-6 mt-10 relative">
+                        <div class="container">
+                            <p class="text-sm font-normal">Незнакомые слова и правила грамматики ложатся на эту основу и усваиваются 
+                                из контекста. И не надо ничего зубрить.</p>
+                        </div>
+                    </div>
+                    <img loading="lazy" src="assets/img/png/study.png" class="w-full object-cover">
+                    <div class="find-out-title-info title-info__sub p-4 text-white text-sm">
+                        Выученные фразы помогают пропустить через себя грамматические конструкции, усвоить их и довести употребление в речи до автоматизма.
+                    </div>
+                </div>
+                </div>
             </div>
 
-            <div class="find-out mt-14 hidden">
-                <div class="find-out-title py-6 relative mt-4">
-                    <div class="container">
-                        <p class="text-sm font-medium text-black">Учитель мягко поправит и обыграет ошибку <br> так, чтобы <span class="font-extrabold">ученик запомнил правило <br> и не воспринял исправление <br>  как критику</span></p>
-                    </div>
-                </div>
-                <img loading="lazy" src="assets/img/png/teacher1.png" class="w-full object-cover -mt-14">
-                <div class="find-out-title-info p-4 text-white text-sm">
-                    Поэтому ребенок легко <span class="font-bold">преодолевает языковой барьер</span>, больше не стремится отмолчаться и может без стресса о чем-то <span class="font-bold">спросить и ответить по-английски</span>
-                </div>
-                <div class="container relative mt-8">
-                    <img loading="lazy" src="assets/img/png/слова.png" class="absolute right-5 top-5">
-                    <p class="font-medium">Грамматические конструкции <br> и фразы «вдруг» сами начинают <br> вплетаться в речь детей</p>
-                    <p class="font-medium text-sm mt-8">На каждом уроке изучаем актуальную <br>
-                        для детей тему и разбираем фразы по ней. <br>
-                        Говорим о том, что интересно ученикам. <br>
-                        И они <span class="font-bold">на лету запоминают новые <br> выражения.</span></p>
-                </div>
-                <div class="find-out-title py-6 mt-10 relative">
-                    <div class="container">
-                        <p class="text-sm font-normal">Незнакомые слова и правила грамматики ложатся на эту основу и усваиваются 
-                            из контекста. И не надо ничего зубрить.</p>
-                    </div>
-                </div>
-                <img loading="lazy" src="assets/img/png/study.png" class="w-full object-cover">
-                <div class="find-out-title-info title-info__sub p-4 text-white text-sm">
-                    Выученные фразы помогают пропустить через себя грамматические конструкции, усвоить их и довести употребление в речи до автоматизма.
-                </div>
-            </div>
             
-            <div class="bg-green_ln p-4 flex items- mt-12">
+            
+            <div class="bg-green_ln p-4 flex items- mt-12 text-sh">
                 <span class="vertical text-white font-bold text-7xl">02</span>
                 <p class="text-white text-lg font-bold ml-1">Добавляем ярких эмоций <br> и усиливаем результат <br> обучения</p>
             </div>
@@ -646,7 +775,7 @@
                             <img loading="lazy" src="assets/img/png/s2.png" class="">
                             <div class="ml-4 text-sm font-normal">
                                 <p class="">По материалам к уроку дети не только изучают английский.</p>
-                                <p class="mt-6">Еще они  и полезное о мире. <span class="font-bold">узнают новое</span>, что речь льется сама собой.</p>
+                                <p class="mt-6">Еще они <span class="font-bold">узнают новое</span> <br>  и полезное о мире.</p>
                             </div>
                         </div>
                         <div class="flex items-start mt-8">
@@ -674,7 +803,7 @@
                                 <p class="mt-3"><span class="font-bold">Помогут и поддержат в <br> учебе,</span> а не засмеют и не <br> отругают за ошибку.</p>
                             </div>
                         </div>
-                        <p class="mt-6">На уроке <span class="font-bold">ребенок чувствует себя <br>  в безопасности. Поэтому не боится <br> проявлять себя</span> – высказывать мысли вслух, <br> общаться.</p>
+                        <p class="mt-6 text-sm">На уроке <span class="font-bold">ребенок чувствует себя <br>  в безопасности. Поэтому не боится <br> проявлять себя</span> – высказывать мысли вслух, <br> общаться.</p>
                         <div class="flex items-start mt-4">
                             <img loading="lazy" src="assets/img/png/stars.png">
                             <p class="text-sm ml-2">Формируем здоровое понимание, что ошибаться – нормально</p>
@@ -725,7 +854,7 @@
             </div>
 
             
-            <div class="bg-green_ln p-4 flex items-center">
+            <div class="bg-green_ln p-4 flex items-center text-sh">
                 <span class="vertical text-white font-bold text-7xl">03</span>
                 <p class="text-white text-base font-normal ml-1"><span class="text-xl font-medium">Плюс – изучаем язык <br> по <span class="font-extrabold">британским учебным <br> материалам № 1</span></p>
             </div>
@@ -739,15 +868,15 @@
             <div class="container -mt-10 relative z-20">
                 <div class="flex items-center">
                     <img loading="lazy" src="assets/img/png/check.png">
-                    <p class="font-medium text-base ml-2">С первого урока дети слышат <span class="font-bold">образцовый британский и американский акцент</span></p>
+                    <p class="font-medium text-base ml-2">С первого урока дети слышат <br> <span class="font-bold">образцовый британский <br> и американский акцент</span></p>
                 </div>
                 <div class="flex items-center mt-6">
                     <img loading="lazy" src="assets/img/png/check.png">
-                    <p class="font-medium text-base ml-2">Осваивают <span class="font-bold">современный живой язык,</span> а не академические фразы  как в школьных учебниках</p>
+                    <p class="font-medium text-base ml-2">Осваивают <span class="font-bold">современный живой <br> язык,</span> а не академические фразы <br>  как в школьных учебниках</p>
                 </div>
                 <div class="flex items-center mt-6">
                     <img loading="lazy" src="assets/img/png/check.png">
-                    <p class="font-medium text-base ml-2">Уроки плавно перетекают друг в друга. Ребенок увязывает пройденный материал  <span class="font-bold">легче осваивает новое</span></p>
+                    <p class="font-medium text-base ml-2">Уроки плавно перетекают друг <br> в друга. Ребенок увязывает <br> пройденный материал и  <span class="font-bold">легче <br> осваивает новое</span></p>
                 </div>
             </div>
     </div>
@@ -756,7 +885,7 @@
     <div class="modul relative">
         <div class="container relative">
             <div class="text-right relative">
-                <p class="text-2xl font-bold">Посмотрите</p>
+                <p class="text-2.5xl font-bold">Посмотрите</p>
                 <span class="base_methods font-normal text-lg text-primary underline">урок на базе методик</span>
                 <div class="animModal w-full bg-white rounded-2xl py-10 px-4 shadow absolute left-0 top-0 text-left hidden z-40">
                     <img loading="lazy" src="assets/img/png/Close.png" class="close_base_methods absolute top-4 right-4">
@@ -1011,7 +1140,7 @@
             <p class="text-right text-sm font-normal">Но в том же время – <br> чтобы это не превратилось <br> в одно сплошное развлечение.</p>
 
             <div class="mt-20 w-full h-52 flex items-center relative overflow-hidden">
-                <p class="text-xl font-extrabold mt-5"><span class="font-normal">А лучше –</span> <br> приходите <br> и всё увидите <br> сами </p>
+                <p class="text-2xl font-extrabold mt-5"><span class="font-normal">А лучше –</span> <br> приходите <br> и всё увидите <br> сами </p>
                 <div class="">
                     <img loading="lazy" src="assets/img/png/Антон.png" class="absolute bottom-0 right-0 anton__photo object-cover">
                     <div class="absolute right-3 bottom-2 text-xs text-white text-right">
@@ -1049,26 +1178,26 @@
                 <div class="mb-2">
                     <label for="name">
                         <span class="text-sm font-normal ml-4">Как к вам обращаться?</span>
-                        <input class="bg-white rounded-2xl w-full h-14 px-4 border-none outline-none" type="text" placeholder="Имя" id="name" required>
+                        <input class="bg-white rounded-2xl w-full h-14 px-4 border-none outline-none mt-0.5" type="text" placeholder="Имя" id="name" required>
                     </label>
                 </div>
                 <div class="mb-2">
                     <label for="number">
                         <span class="text-sm font-normal ml-4">Введите телефон</span>
-                        <input class="bg-white rounded-2xl w-full h-14 px-4 border-none outline-none" type="number" placeholder="Телефон" id="number" required>
+                        <input class="bg-white rounded-2xl w-full h-14 px-4 border-none outline-none mt-0.5" type="number" placeholder="Телефон" id="number" required>
                     </label>
                 </div>
                 <div class="">
                     <label for="select">
                         <span class="text-sm font-normal ml-4">Выберите школу</span>
-                        <select id="select" class="bg-white rounded-2xl w-full h-14 px-4 border-none outline-none" required>
+                        <select id="select" class="bg-white rounded-2xl w-full h-14 px-4 border-none outline-none mt-0.5" required>
                             <option value="0" selected disabled>CHICAGA на Академической</option>
                             <option value="1">CHICAGA</option>
                             <option value="2">CHICAGA</option>
                         </select>
                     </label>
                 </div>
-                <button class="rounded-2xl w-full h-20 border-none outline-none text-white text-lg font-bold mt-6 bg-primary_ln">Записаться на тестирование  и консультацию</button>
+                <button class="rounded-2xl w-full h-20 border-none outline-none text-white text-lg font-bold mt-6 bg-primary_ln">Записаться на тестирование <br>  и консультацию</button>
 
                 <p class="text-xs text-gray_dark font-medium mt-2">Нажимая на кнопку «Записаться на тестирование <br>
                     и консультацию», вы даете согласие на обработку <br> своих персональных данных и соглашаетесь <br>
@@ -1090,7 +1219,7 @@
 
     <div class="confidence mt-20">
         <div class="container">
-            <p class="text-primary_dark text-xl font-bold text-center">Уверенность в общении <br> на английском <span class="text-black font-normal">– это <br> только начало</span></p>
+            <p class="text-primary_dark text-1xl font-bold text-center">Уверенность в общении <br> на английском <span class="text-black font-normal">– это <br> только начало</span></p>
             <p class="text-base font-medium mt-2 mb-3">Посмотрите, каких результатов <br> достигнет ваш ребенок после <br> каждого уровня:</p>
         </div>
         <div class="confidence-item">
@@ -1483,7 +1612,7 @@
         </div>
         <div class="flex items-start mt-4">
             <img loading="lazy" src="assets/img/png/check.png">
-            <p class="text-base font-normal ml-2">А после пробного занятия <br> <span class="font-bold">поощрим </span>за старания<span class="font-bold">валютой <br> школы – фунтиком</span></p>
+            <p class="text-base font-normal ml-2">А после пробного занятия <br> <span class="font-bold">поощрим </span>за старания<span class="font-bold"> валютой <br> школы – фунтиком</span></p>
         </div>
         <button class="w-full h-20 rounded-2xl text-white bg-primary_ln text-lg font-bold bg-shadow mt-8">Записаться на бесплатное <br> тестирование и консультацию</button>
     </div>
@@ -1492,7 +1621,7 @@
     <div class="lessons-carousel mt-20">
         <div class="container">
             <p class="font-normal text-xl">Занятия в</p>
-            <p class="font-bold text-xl text-primary_dark">CHICAGA – как <br> увлекательный квест <br> с друзьями на английском</p>
+            <p class="font-bold text-1xl text-primary_dark">CHICAGA – как <br> увлекательный квест <br> с друзьями на английском</p>
             <p class="text-sm text-right font-normal my-4">И ничего общего с зубрежкой, <br> как обычно в школе</p>
             <div class="lessons-carousel-sup">
                 <div class="lessons-carousel-sup-item">
@@ -1535,7 +1664,7 @@
     <div class="teachers-carousel mt-28">
         <div class="container">
             <p class="text-sm">А умение преподавателей поддержать, <br> похвалить и вовлечь в обучение </p>
-            <p class="text-2xl font-bold text-primary_dark">вдохновляет детей на <br> успех</p>
+            <p class="text-1xl font-bold text-primary_dark">вдохновляет детей на <br> успех</p>
             <p class="text-center text-xl font-normal mt-8">Познакомьтесь с некоторыми <br> <span class="font-extrabold">преподавателями</span></p>
 
             <div class="teachers-carousel-sup">
@@ -1676,7 +1805,7 @@
         </div>
         <div class="relative -mt-7">
             <img loading="lazy" src="assets/img/png/дети3.png" class="w-full object-cover">
-            <p class="absolute right-5 top-8 text-right text-sm"><span class="font-bold">Здесь своя атмосфера, <br> свой круг общения</span> <br> в который вливаешься <br> с первых минут</p>
+            <p class="border__text absolute right-5 top-8 text-right text-sm"><span class="font-bold">Здесь своя атмосфера, <br> свой круг общения</span> <br> в который вливаешься <br> с первых минут</p>
             <div class="play absolute left-5 bottom-14">
                 <img loading="lazy" src="assets/img/png/play.png">
             </div>
@@ -1686,18 +1815,111 @@
     <!-- End -->
 
     <div class="container mt-20">
-        <p class="text-center text-2xl font-medium">Поощряем за учебу</p>
-        <p class="text-center text-2xl font-bold text-primary_dark">«валютой» школы</p>
+        <p class="text-center text-2.5xl font-medium">Поощряем за учебу</p>
+        <p class="text-center text-2.5xl font-bold text-primary_dark">«валютой» школы</p>
         <div class="flex items-center justify-between mt-4">
             <p class="text-sm font-normal">За выполненные домашние<br> задания, активность на <br> занятиях и посещаемость <br> <span class="font-bold">ученики получают фунтики</span></p>
-            <img loading="lazy" src="assets/img/png/валюта.png" class="w-28">
+            <img loading="lazy" src="assets/img/png/m1.png" class="w-28">
         </div>
         <p class="text-sm text-right font-normal mt-8 mb-4">Перед Новым годом и после финального <br> теста в конце мая они могут обменять их на <br> вкусности и развлечения:</p>
     </div>
      <!-- End -->
-    <div class="bg-white shadow p-5 rounded-2xl flex">
-        <div class="w-1/2 h-24 rounded-2xl bg-green_ln mr-2 text-white text-lg font-bold flex items-center justify-center">Ребята <br> 5–10 лет</div>
-        <div class="w-1/2 h-24 rounded-2xl bg-green_ln ml-2 text-white text-lg font-bold flex items-center justify-center">Ребята <br> 11–12 лет</div>
+    <div class="bg-white shadow p-5 rounded-2xl">
+        <div class="flex">
+            <div class="pizza-carousel__btn w-1/2 h-24 rounded-2xl bg-green_ln mr-2 text-white text-lg font-bold flex items-center justify-center">Ребята <br> 5–10 лет</div>
+            <div class="trade-carousel__btn w-1/2 h-24 rounded-2xl bg-green_ln ml-2 text-white text-lg font-bold flex items-center justify-center">Ребята <br> 11–12 лет</div>
+        </div>
+        <div class="pizza-carousel mt-20 hidden">
+            <div class="">
+                <p class="text-center text-base font-normal mb-8">устраиваем <span class="font-bold">яркую</span> <br>
+                    вечеринку <span class="font-bold">Pizza Party</span></p>
+                <div class="pizza-carousel-sup">
+                    <div class="pizza-carousel-sup-item">
+                        <img loading="lazy" src="assets/img/png/pizza1.png" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                    <div class="pizza-carousel-sup-item">
+                        <img loading="lazy" src="assets/img/png/pizza2.png" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                    <div class="pizza-carousel-sup-item">
+                        <img loading="lazy" src="assets/img/png/pizza3.png" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                    <div class="pizza-carousel-sup-item">
+                        <img loading="lazy" src="assets/img/png/pizza2.png" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                    <div class="pizza-carousel-sup-item">
+                        <img loading="lazy" src="assets/img/png/pizza1.png" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                </div>
+                <div class="pizza-carousel-sub">
+                    <div class="pizza-carousel-sub-item">
+                        <img loading="lazy" src="assets/img/png/pizza1.png" class="w-full h-full object-cover rounded-xl">
+                    </div>
+                    <div class="pizza-carousel-sub-item">
+                        <img loading="lazy" src="assets/img/png/pizza2.png" class="w-full h-full object-cover rounded-xl">
+                    </div>
+                    <div class="pizza-carousel-sub-item">
+                        <img loading="lazy" src="assets/img/png/pizza3.png" class="w-full h-full object-cover rounded-xl">
+                    </div>
+                    <div class="pizza-carousel-sub-item">
+                        <img loading="lazy" src="assets/img/png/pizza2.png" class="w-full h-full object-cover rounded-xl">
+                    </div>
+                    <div class="pizza-carousel-sub-item">
+                        <img loading="lazy" src="assets/img/png/pizza1.png" class="w-full h-full object-cover rounded-xl">
+                    </div>
+                </div>
+                <div class="flex items-center justify-between mt-16">
+                    <img src="assets/img/png/pizza.png" alt="">
+                    <p class="font-normal text-sm">На заработанные <span class="font-bold">фунтики</span> дети <br> покупают <span class="font-bold">пиццу или торт.</span> И всей <br> группой <span class="font-bold">смотрят мультфильмы <br> или кино на английском.</span> </p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="trade-carousel mt-20 hidden">
+            <div class="">
+                <p class="text-center text-base font-normal mb-8">проводим большие <br> 
+                    <span class="font-bold">праздничные ярмарки</span></p>
+                <div class="trade-carousel-sup">
+                    <div class="trade-carousel-sup-item">
+                        <img loading="lazy" src="assets/img/png/trade1.png" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                    <div class="trade-carousel-sup-item">
+                        <img loading="lazy" src="assets/img/png/trade2.png" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                    <div class="trade-carousel-sup-item">
+                        <img loading="lazy" src="assets/img/png/trade3.png" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                    <div class="trade-carousel-sup-item">
+                        <img loading="lazy" src="assets/img/png/trade4.png" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                    <div class="trade-carousel-sup-item">
+                        <img loading="lazy" src="assets/img/png/trade5.png" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                </div>
+                <div class="trade-carousel-sub">
+                    <div class="trade-carousel-sub-item">
+                        <img loading="lazy" src="assets/img/png/trade1.png" class="w-full h-full object-cover rounded-xl">
+                    </div>
+                    <div class="trade-carousel-sub-item">
+                        <img loading="lazy" src="assets/img/png/trade2.png" class="w-full h-full object-cover rounded-xl">
+                    </div>
+                    <div class="trade-carousel-sub-item">
+                        <img loading="lazy" src="assets/img/png/trade3.png" class="w-full h-full object-cover rounded-xl">
+                    </div>
+                    <div class="trade-carousel-sub-item">
+                        <img loading="lazy" src="assets/img/png/trade4.png" class="w-full h-full object-cover rounded-xl">
+                    </div>
+                    <div class="trade-carousel-sub-item">
+                        <img loading="lazy" src="assets/img/png/trade5.png" class="w-full h-full object-cover rounded-xl">
+                    </div>
+                </div>
+                <div class="flex items-center justify-between mt-16">
+                    <img src="assets/img/png/money.png">
+                    <p class="font-normal text-sm">Накопленные <span class="font-bold">фунтики</span> они <br> обменивают на игрушки, <br> подарки и сладости</p>
+                    <img src="assets/img/png/ice-cream.png">
+                </div>
+            </div>
+        </div>
     </div>
      <!-- End -->
     <div class="chicaga_ln py-8 px-5 text-sm font-normal">
@@ -1710,7 +1932,7 @@
             <p class="text-right mr-2">И даже лето мы <br> проводим с пользой</p>
             <img loading="lazy" src="assets/img/png/sun.png">
         </div>
-        <p class="text-2xl text-center font-bold mt-4">Дети с нетерпением <br> ждут языковой лагерь</p>
+        <p class="text-2.5xl text-center font-bold mt-4">Дети с нетерпением <br> ждут языковой лагерь</p>
         <img loading="lazy" src="assets/img/png/дети4.png" class="w-full object-cover">
         <div class="container -mt-16">
             <button class="w-full h-20 rounded-2xl text-white bg-primary_ln text-lg font-bold bg-shadow">Получить программу летнего <br> языкового лагеря для детей</button>
@@ -1719,7 +1941,7 @@
      <!-- End -->
 
     <div class="container mt-20">
-        <p class="font-bold text-2xl text-primary_dark">Начало обучения – <br> почти сразу</p>
+        <p class="font-bold text-2.5xl text-primary_dark">Начало обучения – <br> почти сразу</p>
         <p class="text-sm mt-4"><span class="font-bold">Без привязки к датам</span> <br> и укомплектованности группы</p>
         <div class="flex items-center justify-between relative">
             <p class="">В группах занимается <br> <span class="in_groups text-primary underline">от 2 до 10 детей. </span> </p>
@@ -1743,7 +1965,7 @@
             </div>
             <p class="text-sm ml-4">Мы сами заинтересованы, <br> чтобы дети <span class="font-bold">не выпадали <br> из процесса обучения.</span> <br><br> Поэтому предлагаем <br> <span class="font-bold">варианты отработки <br> или заморозки занятий.</span></p>
         </div>
-        <p class="text-dark text-sm"><span class="font-semibold">Антон Соколов</span> <br> Основатель СHICAGA </p>
+        <p class="text-dark text-sx"><span class="font-semibold">Антон Соколов</span> <br> Основатель СHICAGA </p>
     </div>
      <!-- End -->
 
@@ -1754,7 +1976,7 @@
          <div class="bg-white w-full rounded-b-2xl px-4 pb-4 -mt-1">
              <p class="text-sm font-thin">Поможем догнать программу <br> <span class="font-semibold">на индивидуальных занятиях <br> с преподавателем</span></p>
          </div>
-         <img loading="lazy" src="assets/img/png/Medicine.png" class="absolute right-10 top-16">
+         <img loading="lazy" src="assets/img/png/Medicine.png" class="absolute right-10 top-8">
      </div>
      <!-- End -->
      <div class="relative container shadow z-50">
@@ -1780,12 +2002,12 @@
      <div class="mt-20 relative z-0">
          <img loading="lazy" src="assets/img/png/card.png" class="w-full object-cover">
          <div class="absolute top-14 left-5">
-             <p class="text-shadow font-semibold"><span class="text-7xl">7657</span><span class="text-2xl">детей</span></p>
-             <p class="text-gray_dark text-lg">прошли от 1 до 7 уровней <br> английского</p>
+             <p class="text-sh text-white font-semibold"><span class="text-7xl">7657</span><span class="text-2xl">детей</span></p>
+             <p class="text-gray_dark text-lg text-white">прошли от 1 до 7 уровней <br> английского</p>
          </div>
          <div class="absolute bottom-20 right-5">
-             <p class="text-shadow font-semibold text-right"><span class="text-2xl">За</span><span class="text-7xl">7</span><span class="text-2xl">лет</span></p>
-             <p class="text-gray_dark text-lg text-right">работы школы</p>
+             <p class="text-sh text-white font-semibold text-right"><span class="text-2xl">За</span><span class="text-7xl">7</span><span class="text-2xl">лет</span></p>
+             <p class="text-gray_dark text-lg text-white text-right">работы школы</p>
          </div>
      </div>
      <!-- End -->
@@ -1864,7 +2086,7 @@
                 <img loading="lazy" src="assets/img/png/check_price.png">
             </div>
             <div class="relative mt-4">
-                <p class="text-sm">купить полкурса или весь курс <br> сразу – и <span class="buy_course_btn text-primary underline font-semibold">сэкономить до 25 %</span> </p>
+                <p class="text-lg">купить полкурса или весь курс <br> сразу – и <span class="buy_course_btn text-primary underline font-semibold">сэкономить до 25 %</span> </p>
                 <div class="animModal buy_course w-full bg-white rounded-2xl py-10 px-4 shadow absolute left-0 top-0 text-left hidden z-40">
                     <img loading="lazy" src="assets/img/png/Close.png" class="buy_course_close absolute top-4 right-4">
                     <p class="text-sm font-normal"><span class="font-bold">Скидка 20 %  </span>при оплате <br> группового курса от 4 месяцев</p>
@@ -1882,7 +2104,7 @@
                     </div>
                     <p class="text-sm ml-4">Понимаем вас: не всегда <br> получается оплатить весь <br> курс сразу.</span> <br><br>Поэтому можно <span class="font-bold">разбить <br> оплату на части.</span></p>
                 </div>
-                <p class="text-dark text-sm"><span class="font-semibold">Анна Соколова</span> <br>Менеджер CHICAGA </p>
+                <p class="text-dark text-sx"><span class="font-semibold">Анна Соколова</span> <br>Менеджер CHICAGA </p>
             </div>
         </div>
      </div>
@@ -1893,7 +2115,7 @@
              <img loading="lazy" src="assets/img/png/heart.png">
              <p class="text-sm ml-2">Рекомендуют эксперты <br> и советуют родители</p>
          </div>
-         <p class="text-center text-2xl font-bold text-primary_dark my-4">CHICAGA – школа № 1</p>
+         <p class="text-center text-2.5xl font-bold text-primary_dark my-4">CHICAGA – школа № 1</p>
          <p class="text-center">в профессиональных рейтингах <br> курсов английского в Петербурге</p>
          <div class="flex items-center justify-between mt-6">
             <div class="flex items-center">
@@ -1914,7 +2136,7 @@
      <!-- End -->
 
      <div class="container mt-6">
-         <p class="text-2xl font-bold text-primary_dark text-center">7 премий «Эксперт Года» <br>  от SchoolRate.ru</p>
+         <p class="text-1xl font-bold text-primary_dark text-center">7 премий «Эксперт Года» <br>  от SchoolRate.ru</p>
          <div class="border-2 border-dotted border-gray_light rounded-2xl relative py-4 pl-16 mt-10 text-sm">
             Это  как <span class="font-bold">7 премий “Оскар”</span> <br> в киноиндустрии
             <img loading="lazy" src="assets/img/png/оскар.png" class="absolute left-3 bottom-0">
@@ -1999,7 +2221,7 @@
      <!-- End -->
 
      <div class="faq mt-24">
-         <p class="text-2xl text-primary_dark font-bold text-center mb-2"> Ответы на самые <br> важные для васвопросы</p>
+         <p class="text-2.5xl text-primary_dark font-bold text-center mb-2"> Ответы на самые <br> важные для васвопросы</p>
          <div class="faq-item p-5">
             <div class="faq-list rounded-3xl px-4 flex items-center justify-between">
                 <p class="text-sm"><span class="font-bold">Да,</span> 3 пробных занятия <br> действительно бесплатные</p>
@@ -2025,7 +2247,7 @@
             </div>
             <div class="flex items-start mt-5">
                 <div class="circle"></div>
-                <p class="text-sm ml-2"><span class="font-bold">200 руб </span>– за каждого пришедшего друга на обучение</p>
+                <p class="text-sm ml-2"><span class="font-bold">2000 руб </span>– за каждого пришедшего друга на обучение</p>
             </div>
             <div class="text-sm mt-5"><span class="font-extrabold">За продление обучения</span> дарим подарки и разыгрываем призы. <br> Наши юные студенты уже получили и  выиграли планшеты, фирменные толстовки, электросамокаты, поездки  в Диснейленд в США и музей Гарри Поттера в Лондоне, сертификаты на бесплатное обучение.     </div>
          </div>
@@ -2054,7 +2276,7 @@
             </div>
             <div class="flex items-start mt-5">
                 <div class="circle"></div>
-                <p class="text-sm ml-2"><span class="font-bold">200 руб </span>– за каждого пришедшего друга на обучение</p>
+                <p class="text-sm ml-2"><span class="font-bold">2000 руб </span>– за каждого пришедшего друга на обучение</p>
             </div>
             <div class="text-sm mt-5"><span class="font-extrabold">За продление обучения</span> дарим подарки и разыгрываем призы. <br> Наши юные студенты уже получили и  выиграли планшеты, фирменные толстовки, электросамокаты, поездки  в Диснейленд в США и музей Гарри Поттера в Лондоне, сертификаты на бесплатное обучение.     </div>
          </div>
@@ -2084,7 +2306,7 @@
             </div>
             <div class="flex items-start mt-5">
                 <div class="circle"></div>
-                <p class="text-sm ml-2"><span class="font-bold">200 руб </span>– за каждого пришедшего друга на обучение</p>
+                <p class="text-sm ml-2"><span class="font-bold">2000 руб </span>– за каждого пришедшего друга на обучение</p>
             </div>
             <div class="text-sm mt-5"><span class="font-extrabold">За продление обучения</span> дарим подарки и разыгрываем призы. <br> Наши юные студенты уже получили и  выиграли планшеты, фирменные толстовки, электросамокаты, поездки  в Диснейленд в США и музей Гарри Поттера в Лондоне, сертификаты на бесплатное обучение.     </div>
          </div>
@@ -2113,7 +2335,7 @@
             </div>
             <div class="flex items-start mt-5">
                 <div class="circle"></div>
-                <p class="text-sm ml-2"><span class="font-bold">200 руб </span>– за каждого пришедшего друга на обучение</p>
+                <p class="text-sm ml-2"><span class="font-bold">2000 руб </span>– за каждого пришедшего друга на обучение</p>
             </div>
             <div class="text-sm mt-5"><span class="font-extrabold">За продление обучения</span> дарим подарки и разыгрываем призы. <br> Наши юные студенты уже получили и  выиграли планшеты, фирменные толстовки, электросамокаты, поездки  в Диснейленд в США и музей Гарри Поттера в Лондоне, сертификаты на бесплатное обучение.     </div>
          </div>
@@ -2142,7 +2364,7 @@
             </div>
             <div class="flex items-start mt-5">
                 <div class="circle"></div>
-                <p class="text-sm ml-2"><span class="font-bold">200 руб </span>– за каждого пришедшего друга на обучение</p>
+                <p class="text-sm ml-2"><span class="font-bold">2000 руб </span>– за каждого пришедшего друга на обучение</p>
             </div>
             <div class="text-sm mt-5"><span class="font-extrabold">За продление обучения</span> дарим подарки и разыгрываем призы. <br> Наши юные студенты уже получили и  выиграли планшеты, фирменные толстовки, электросамокаты, поездки  в Диснейленд в США и музей Гарри Поттера в Лондоне, сертификаты на бесплатное обучение.     </div>
          </div>
@@ -2171,7 +2393,7 @@
             </div>
             <div class="flex items-start mt-5">
                 <div class="circle"></div>
-                <p class="text-sm ml-2"><span class="font-bold">200 руб </span>– за каждого пришедшего друга на обучение</p>
+                <p class="text-sm ml-2"><span class="font-bold">2000 руб </span>– за каждого пришедшего друга на обучение</p>
             </div>
             <div class="text-sm mt-5"><span class="font-extrabold">За продление обучения</span> дарим подарки и разыгрываем призы. <br> Наши юные студенты уже получили и  выиграли планшеты, фирменные толстовки, электросамокаты, поездки  в Диснейленд в США и музей Гарри Поттера в Лондоне, сертификаты на бесплатное обучение.     </div>
          </div>
@@ -2180,7 +2402,7 @@
 
      <div class="faq-sub py-6 mt-12">
          <div class="container">
-             <p class="font-extrabold text-2xl">У вас другой вопрос?</p>
+             <p class="font-extrabold text-2.5xl">У вас другой вопрос?</p>
              <div class="flex items-start justify-between mt-4">
                 <div>
                     <p class="mb-4">Напишите нам в чат</p>
@@ -2220,19 +2442,20 @@
          <p class="text-center font-normal text-base">в разных районах Петербурга</p>
          <p class="font-thin text-center text-sm">(в филиалах на Владимирской и Петроградской <br> курсы только для взрослых и подростков)</p>
          <div class="flex justify-center w-full my-4">
-             <button class="w-36 h-12 mr-2 rounded-2xl text-white bg-primary_ln text-sm font-bold bg-shadow">На карте</button>
+             <button class="w-36 h-12 mr-2 rounded-2xl text-white bg-primary_ln text-sm font-bold bg-shadow2">На карте</button>
              <button class="map__btn w-36 h-12 rounded-2xl text-black text-sm font-bold">Списком</button>
          </div>
          <div class="relative w-full">
              <img loading="lazy" src="assets/img/png/map.png" class="w-full">
              <div class="absolute left-0 bottom-0 rounded-2xl bg-white shadow p-3 w-full">
-                 <div class="">
+                 <div class="relative">
                     <p class="font-bold">Школа на Академической</p>
                     <p class="text-sm font-thin my-1">4 минуты ходьбы от ст. м. <br> Академическая</p>
                     <p class="text-sm font-normal">Калининский район, <br> Проспект Науки, д. 10, к. 1</p>
                     <p class="text-sm font-normal my-1">тел. <a href="tel:+7 812 2425080" class="font-bold text-black">+7 (812) 242-50-80</a></p>
                     <p class="text-sm font-normal">E-mail: academ@chicaga.ru</p>
                     <p class="text-sm font-normal text-primary mt-2">Увидеть вход</p>
+                    <img src="assets/img/png/m.png" alt="" class="absolute top-2 right-0">
                  </div>
              </div>
          </div>
@@ -2260,10 +2483,10 @@
                     <a href="tel:+7 812 242-50-03" class="text-white text-sm font-bold">+7 (812) 242-50-03</a>
                     <div class="flex justify-end mt-4">
                         <a href="#">
-                            <svg width="30" height="30" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M25.0062 0H24.9938C11.2094 0 0 11.2125 0 25C0 30.4688 1.7625 35.5375 4.75938 39.6531L1.64375 48.9406L11.2531 45.8688C15.2063 48.4875 19.9219 50 25.0062 50C38.7906 50 50 38.7844 50 25C50 11.2156 38.7906 0 25.0062 0Z" fill="#4CAF50"/>
-                                <path d="M39.5533 35.3033C38.9502 37.0064 36.5565 38.4189 34.6471 38.8314C33.3408 39.1096 31.6346 39.3314 25.8908 36.9502C18.544 33.9064 13.8127 26.4408 13.444 25.9564C13.0908 25.4721 10.4752 22.0033 10.4752 18.4158C10.4752 14.8283 12.2971 13.0814 13.0315 12.3314C13.6346 11.7158 14.6315 11.4346 15.5877 11.4346C15.8971 11.4346 16.1752 11.4502 16.4252 11.4627C17.1596 11.4939 17.5283 11.5377 18.0127 12.6971C18.6158 14.1502 20.0846 17.7377 20.2596 18.1064C20.4377 18.4752 20.6158 18.9752 20.3658 19.4596C20.1315 19.9596 19.9252 20.1814 19.5565 20.6064C19.1877 21.0314 18.8377 21.3564 18.469 21.8127C18.1315 22.2096 17.7502 22.6346 18.1752 23.3689C18.6002 24.0877 20.069 26.4846 22.2315 28.4096C25.0221 30.8939 27.2846 31.6877 28.094 32.0252C28.6971 32.2752 29.4158 32.2158 29.8565 31.7471C30.4158 31.1439 31.1065 30.1439 31.8096 29.1596C32.3096 28.4533 32.9408 28.3658 33.6033 28.6158C34.2783 28.8502 37.8502 30.6158 38.5846 30.9814C39.319 31.3502 39.8033 31.5252 39.9815 31.8346C40.1565 32.1439 40.1565 33.5971 39.5533 35.3033Z" fill="#FAFAFA"/>
-                            </svg>
+                            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15.5" cy="15.5" r="15.5" fill="#3FBF50"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M25 15.2546C25 20.368 20.8244 24.5091 15.6728 24.5091C14.0374 24.5091 12.5007 24.0923 11.1639 23.3581L6 25L7.68366 20.0341C6.83436 18.6397 6.34514 17.0046 6.34514 15.2546C6.34514 10.1439 10.5211 6 15.6728 6C20.8246 6 25 10.1439 25 15.2546ZM15.6728 7.47467C11.3482 7.47467 7.83075 10.9645 7.83075 15.2546C7.83075 16.9577 8.38573 18.5343 9.32461 19.8173L8.3448 22.7068L11.3584 21.7481C12.5965 22.5619 14.0797 23.0351 15.6728 23.0351C19.9965 23.0351 23.5145 19.5467 23.5145 15.2546C23.5145 10.9645 19.9967 7.47467 15.6728 7.47467ZM20.3827 17.386C20.325 17.2915 20.1727 17.2337 19.9444 17.1215C19.7156 17.0087 18.5912 16.4586 18.382 16.3832C18.1725 16.3091 18.0197 16.2703 17.8674 16.4974C17.7152 16.7258 17.2769 17.2337 17.1432 17.386C17.0099 17.539 16.8767 17.5553 16.6479 17.4431C16.4195 17.3302 15.6828 17.0902 14.8094 16.3172C14.1298 15.7169 13.6709 14.9751 13.5375 14.7474C13.4043 14.5196 13.5236 14.3979 13.6378 14.285C13.7408 14.1831 13.8666 14.0199 13.9809 13.8873C14.0955 13.7547 14.1335 13.6602 14.2093 13.5086C14.2858 13.357 14.2476 13.2265 14.1902 13.1116C14.1332 12.9987 13.6755 11.8817 13.4852 11.4275C13.2948 10.9733 13.1044 11.0495 12.9709 11.0495C12.8377 11.0495 12.685 11.0291 12.5325 11.0291C12.3803 11.0291 12.1323 11.0876 11.9227 11.314C11.7133 11.5424 11.1228 12.0904 11.1228 13.2061C11.1228 14.3218 11.9416 15.4001 12.0564 15.5517C12.1706 15.7033 13.6375 18.0672 15.9617 18.9783C18.2867 19.8832 18.2867 19.5813 18.7058 19.5446C19.1247 19.5059 20.0582 18.9946 20.2493 18.4663C20.4396 17.9353 20.4396 17.4805 20.3827 17.386Z" fill="white"/>
+                                </svg>
                         </a>
                         <a href="#" class="ml-4">
                            <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">

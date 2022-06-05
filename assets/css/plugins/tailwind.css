@@ -1549,6 +1549,7 @@ to{transform:rotate(360deg)}
 .hover\:border-opacity-95:hover{--tw-border-opacity:0.95}
 .hover\:border-opacity-100:hover{--tw-border-opacity:1}
 .bg-shadow{box-shadow:0 3px 0 #33478d}
+.bg-shadow2{box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.25), inset 0px 0px 9px rgba(144, 177, 249, 0.54);}
 .bg-transparent{background-color:transparent}
 .bg-current{background-color:currentColor}
 .bg-opacity{background-color:#0008}
@@ -1565,6 +1566,7 @@ to{transform:rotate(360deg)}
 .bg-primary_ln{background:linear-gradient(180deg,#76aaf8 0,#4165e3 100%)}
 .bg-green_ln{background:linear-gradient(220.53deg,rgba(155,247,99,.7) 0,rgba(38,171,91,.7) 76.95%)}
 .bg-green_ln_light{background:linear-gradient(180.06deg,#dfffd7 -11.15%,#fff 99.95%)}
+.bg-green_ln_dark{background: linear-gradient(180.06deg, #FFFFFF -11.15%, #DFFFD7 99.95%);}
 .bg-opacity-0{--tw-bg-opacity:0}
 .bg-opacity-5{--tw-bg-opacity:0.05}
 .bg-opacity-10{--tw-bg-opacity:0.1}
@@ -1906,10 +1908,12 @@ to{transform:rotate(360deg)}
 .align-text-bottom{vertical-align:text-bottom}
 .font-montserrat{font-family:Montserrat,serif}
 .text-xs{font-size:.75rem;line-height:1rem}
+.text-sx{font-size: 13px;line-height:1.15rem}
 .text-sm{font-size:.875rem;line-height:1.25rem}
 .text-base{font-size:1rem;line-height:1.5rem}
 .text-lg{font-size:1.125rem;line-height:1.75rem}
 .text-xl{font-size:1.25rem;line-height:1.75rem}
+.text-1xl{font-size:22px;line-height:1.9rem}
 .text-2xl{font-size:1.5rem;line-height:2rem}
 .text-2\.5xl{font-size:26px;line-height: 39px}
 .text-3xl{font-size:1.875rem;line-height:2.25rem}
@@ -1933,6 +1937,7 @@ to{transform:rotate(360deg)}
 .capitalize{text-transform:capitalize}
 .underline{text-decoration:underline}
 .normal-case{text-transform:none}
+.text-sh{text-shadow: 0px 0px 8px rgba(0, 87, 30, 0.5);}
 .text-shadow{background:linear-gradient(180deg,#fff 0,rgba(255,255,255,.75) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-fill-color:transparent}
 .text-transparent{color:transparent}
 .text-current{color:currentColor}
